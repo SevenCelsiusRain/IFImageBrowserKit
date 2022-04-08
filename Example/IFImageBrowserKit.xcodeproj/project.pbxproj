@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		01D0048FF1645A7E130EA00F /* Pods_IFImageBrowserKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFImageBrowserKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CFAC7ABDE902FA97633E1B1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		4CFAC7ABDE902FA97633E1B1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* IFImageBrowserKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IFImageBrowserKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		7BD1FA85FAB648B57542DA40 /* Pods-IFImageBrowserKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFImageBrowserKit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-IFImageBrowserKit_Tests/Pods-IFImageBrowserKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		83E194EAC64A97F7404027F3 /* Pods-IFImageBrowserKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFImageBrowserKit_Example.debug.xcconfig"; path = "Target Support Files/Pods-IFImageBrowserKit_Example/Pods-IFImageBrowserKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A855B220152E61947585C559 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		A855B220152E61947585C559 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B2FF93C096588FC99EBBD1C1 /* Pods_IFImageBrowserKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IFImageBrowserKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C0351B3451E7B22F152635F9 /* IFImageBrowserKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = IFImageBrowserKit.podspec; path = ../IFImageBrowserKit.podspec; sourceTree = "<group>"; };
+		C0351B3451E7B22F152635F9 /* IFImageBrowserKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IFImageBrowserKit.podspec; path = ../IFImageBrowserKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E28D2D299501D692D39002A5 /* Pods-IFImageBrowserKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IFImageBrowserKit_Tests.release.xcconfig"; path = "Target Support Files/Pods-IFImageBrowserKit_Tests/Pods-IFImageBrowserKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				7BD1FA85FAB648B57542DA40 /* Pods-IFImageBrowserKit_Tests.debug.xcconfig */,
 				E28D2D299501D692D39002A5 /* Pods-IFImageBrowserKit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +258,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -303,11 +303,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-IFImageBrowserKit_Example/Pods-IFImageBrowserKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IFCommonKit/IFCommonKit.framework",
 				"${BUILT_PRODUCTS_DIR}/IFImageBrowserKit/IFImageBrowserKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IFCommonKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IFImageBrowserKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

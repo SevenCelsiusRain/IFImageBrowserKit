@@ -1,0 +1,44 @@
+PODS:
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - IFCommonKit (0.0.1.2)
+  - IFImageBrowserKit (0.0.0.1):
+    - IFCommonKit
+    - SDWebImage
+    - YYImage
+  - SDWebImage (5.12.2):
+    - SDWebImage/Core (= 5.12.2)
+  - SDWebImage/Core (5.12.2)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - IFImageBrowserKit (from `../`)
+
+SPEC REPOS:
+  http://10.255.35.174/iov-ios/IFSpecs.git:
+    - IFCommonKit
+  trunk:
+    - FBSnapshotTestCase
+    - SDWebImage
+    - YYImage
+
+EXTERNAL SOURCES:
+  IFImageBrowserKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  IFCommonKit: ba418069fbbb7cfb13e82e8618f619c82bd40aa3
+  IFImageBrowserKit: 0db3cfd5e39309e365b076b970c7426ddb66e326
+  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+
+PODFILE CHECKSUM: 1879dc918f39f079e559dbab3c34e4ed9b11d0f3
+
+COCOAPODS: 1.11.2

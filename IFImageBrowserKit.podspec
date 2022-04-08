@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IFImageBrowserKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of IFImageBrowserKit.'
+  s.version          = '0.0.0.1'
+  s.summary          = '图片预览'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,22 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+图片预览组件
                        DESC
 
-  s.homepage         = 'https://github.com/张高磊/IFImageBrowserKit'
+  s.homepage         = 'https://ifgitlab.gwm.cn/iov-ios/IFImageBrowserKit'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '张高磊' => 'mrglzh@yeah.net' }
-  s.source           = { :git => 'https://github.com/张高磊/IFImageBrowserKit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'http://10.255.35.174/iov-ios/IFImageBrowserKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'IFImageBrowserKit/Classes/**/*'
+  s.resource = 'IFImageBrowserKit/Assets/*.bundle'
   
-  # s.resource_bundles = {
-  #   'IFImageBrowserKit' => ['IFImageBrowserKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'IFCommonKit'
+  s.dependency 'YYImage'
+  s.dependency 'SDWebImage'
 end

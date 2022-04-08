@@ -1,0 +1,6 @@
+framework module Pods_IFImageBrowserKit_Example {
+  umbrella header "Pods-IFImageBrowserKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
