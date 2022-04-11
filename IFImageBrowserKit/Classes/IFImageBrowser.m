@@ -53,6 +53,7 @@
     _auxiliaryViewHandler = [IFIBAuxiliaryViewHandler new];
     _shouldHideStatusBar = YES;
     _autoHideProjectiveView = YES;
+    _tapHideBrowser = YES;
 #if __has_include("IFIBDefaultWebImageMediator.h")
     _webImageMediator = [IFIBDefaultWebImageMediator new];
 #endif
@@ -278,6 +279,7 @@
             }
         }];
     }
+//    obj.yb_tapHideBrowser(self.tapHideBrowser);
 }
 
 - (void)implementGetBaseInfoProtocol:(id<IFIBGetBaseInfoProtocol>)obj {
@@ -389,7 +391,7 @@
     
     [self implementGetBaseInfoProtocol:cell];
     [self implementOperateBrowserProtocol:cell];
-    
+    cell.yb_tapHideBrowser(self.tapHideBrowser);
     if ([cell respondsToSelector:@selector(setYb_selfPage:)]) {
         [cell setYb_selfPage:^NSInteger{
             return indexPath.row;

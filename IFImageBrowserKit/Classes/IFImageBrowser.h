@@ -106,6 +106,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 核心集合视图
 @property (nonatomic, strong, readonly) IFIBCollectionView *collectionView;
 
+// 是否允许点击退出图片预览 默认：YES
+@property  (nonatomic, assign) BOOL tapHideBrowser;
+
 @end
 
 NS_ASSUME_NONNULL_END

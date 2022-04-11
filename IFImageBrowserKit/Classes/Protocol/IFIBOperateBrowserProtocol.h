@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 是否隐藏工具视图
 @property (nonatomic, copy) void(^yb_hideToolViews)(BOOL);
 
+@property (nonatomic, copy) void(^yb_tapHideBrowser)(BOOL);
+
 @end
 
 NS_ASSUME_NONNULL_END

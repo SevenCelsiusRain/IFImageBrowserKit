@@ -69,6 +69,7 @@
 @synthesize yb_cellIsInCenter = _yb_cellIsInCenter;
 @synthesize yb_selfPage = _yb_selfPage;
 @synthesize yb_currentPage = _yb_currentPage;
+@synthesize yb_tapHideBrowser = _yb_tapHideBrowser;
 
 - (void)setYb_cellData:(id<IFIBDataProtocol>)yb_cellData {
     _yb_cellData = yb_cellData;
@@ -306,8 +307,13 @@
 //    [tapSingle requireGestureRecognizerToFail:tapDouble];
     [tapSingle requireGestureRecognizerToFail:pan];
 //    [tapDouble requireGestureRecognizerToFail:pan];
-    
-//    [self addGestureRecognizer:tapSingle];
+    if_weakify(self);
+    self.yb_tapHideBrowser = ^(BOOL tapHide) {
+        if_strongify(self);
+        if (tapHide) {
+            [self addGestureRecognizer:tapSingle];
+        }
+    };
 //    [self addGestureRecognizer:tapDouble];
     [self addGestureRecognizer:pan];
 }
