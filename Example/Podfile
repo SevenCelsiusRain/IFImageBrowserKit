@@ -1,5 +1,5 @@
 source 'https://github.com/CocoaPods/Specs.git' #官方仓库地址
-source 'http://10.255.35.174/iov-ios/IFSpecs.git'
+source 'http://10.255.35.174/iov-ios/IFSpecs.git'  #私有组件
 use_frameworks!
 
 platform :ios, '9.0'

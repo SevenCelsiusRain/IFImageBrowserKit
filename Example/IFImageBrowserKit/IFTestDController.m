@@ -33,7 +33,6 @@
     
     NSMutableArray *datas = [NSMutableArray array];
     [self.dataArray enumerateObjectsUsingBlock:^(NSString *_Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        
         // 网络图片
         IFIBImageData *data = [IFIBImageData new];
         data.imageURL = [NSURL URLWithString:obj];
