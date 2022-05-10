@@ -5,7 +5,7 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - IFCommonKit (0.0.1.2)
-  - IFImageBrowserKit (0.0.0.1):
+  - IFImageBrowserKit (0.0.0.2):
     - IFCommonKit
     - SDWebImage
     - YYImage
@@ -36,7 +36,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   IFCommonKit: ba418069fbbb7cfb13e82e8618f619c82bd40aa3
-  IFImageBrowserKit: 0db3cfd5e39309e365b076b970c7426ddb66e326
+  IFImageBrowserKit: a77672910a6d4e85e238c3ec8f8e292e812fd509
   SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
