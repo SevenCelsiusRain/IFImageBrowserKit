@@ -179,9 +179,7 @@ static CGFloat _NSStringPathScale(NSString *string) {
         
         YYImageFrame *frame = [decoder frameAtIndex:0 decodeForDisplay:decodeForDisplay];
         UIImage *image = frame.image;
-        if (!image){
-            return (IFImage *)[UIImage imageWithData:data];
-        };
+        if (!image) return nil;
         self = [self initWithCGImage:image.CGImage scale:decoder.scale orientation:image.imageOrientation];
         if (!self) return nil;
         _animatedImageType = decoder.type;

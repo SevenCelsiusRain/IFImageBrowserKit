@@ -5,6 +5,7 @@ use_frameworks!
 platform :ios, '9.0'
 
 target 'IFImageBrowserKit_Example' do
+#  pod 'IFImageBrowserKit'
   pod 'IFImageBrowserKit', :path => '../'
 
   target 'IFImageBrowserKit_Tests' do

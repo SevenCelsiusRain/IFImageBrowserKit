@@ -482,9 +482,6 @@
     } else {
         imageViewFrame.origin.x = (sWidth - width) / 2.0;
     }
-    if (imageViewFrame.origin.y > 30) {
-        imageViewFrame.origin.y = imageViewFrame.origin.y - IFRatioH(12);
-    }
     self.imageScrollView.imageView.frame = imageViewFrame;
 }
 

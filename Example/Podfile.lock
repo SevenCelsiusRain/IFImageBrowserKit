@@ -9,9 +9,9 @@ PODS:
     - IFCommonKit
     - SDWebImage
     - YYImage
-  - SDWebImage (5.12.2):
-    - SDWebImage/Core (= 5.12.2)
-  - SDWebImage/Core (5.12.2)
+  - SDWebImage (5.12.3):
+    - SDWebImage/Core (= 5.12.3)
+  - SDWebImage/Core (5.12.3)
   - YYImage (1.0.4):
     - YYImage/Core (= 1.0.4)
   - YYImage/Core (1.0.4)
@@ -23,10 +23,11 @@ DEPENDENCIES:
 SPEC REPOS:
   http://10.255.35.174/iov-ios/IFSpecs.git:
     - IFCommonKit
-  trunk:
-    - FBSnapshotTestCase
+  https://github.com/CocoaPods/Specs.git:
     - SDWebImage
     - YYImage
+  trunk:
+    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   IFImageBrowserKit:
@@ -36,9 +37,9 @@ SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   IFCommonKit: ba418069fbbb7cfb13e82e8618f619c82bd40aa3
   IFImageBrowserKit: 0db3cfd5e39309e365b076b970c7426ddb66e326
-  SDWebImage: 240e5c12b592fb1268c1d03b8c90d90e8c2ffe82
+  SDWebImage: 53179a2dba77246efa8a9b85f5c5b21f8f43e38f
   YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
 
-PODFILE CHECKSUM: 1879dc918f39f079e559dbab3c34e4ed9b11d0f3
+PODFILE CHECKSUM: 958162ec3bdaae89a126500f2c9177c1bd5e8904
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

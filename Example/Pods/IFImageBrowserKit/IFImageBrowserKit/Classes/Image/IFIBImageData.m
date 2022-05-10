@@ -247,7 +247,6 @@ static dispatch_queue_t YBIBImageProcessingQueue(void) {
                 return;
             }
             IFImage *image = [IFImage imageWithData:imageData scale:UIScreen.mainScreen.scale decodeDecision:decision];
-            NSLog(@"sdfds");
             __weak typeof(self) wSelf = self;
             YBIB_DISPATCH_ASYNC_MAIN(^{
                 __strong typeof(wSelf) self = wSelf;
